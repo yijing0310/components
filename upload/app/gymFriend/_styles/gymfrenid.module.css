@@ -1,0 +1,91 @@
+.container {
+  margin: auto;
+  width: 1200px;
+}
+/* Bannner */
+.banner {
+  width: 1200px;
+  height: 400px;
+  background-color: rgba(128, 128, 128, 0.644);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Select */
+.selectTarget {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.selectTarget p {
+  margin: 10px;
+}
+.selectTarget ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.selectTarget ul li {
+  cursor: pointer;
+  padding: 0px 10px;
+  border-right: 1px solid #333;
+}
+.selectTarget ul li:hover {
+  color: #f87808;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.selectTarget ul li:last-child {
+  border-right: none;
+}
+/* 卡片 */
+.personList {
+  padding: 10px;
+  /* background-color: #013056; */
+}
+.personList .card {
+  display: flex;
+  width: 305px;
+  height: 402px;
+  padding: 14px 0px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333;
+}
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  background: url('https://xsgames.co/randomusers/avatar.php?g=pixel') lightgray
+    50% / cover no-repeat;
+}
+.personContent {
+  display: flex;
+  height: 218px;
+  padding: 15px 35px;
+  flex-direction: column;
+  align-items: center;
+  gap: 34px;
+  flex-shrink: 0;
+  align-self: stretch;
+ 
+}
+.personContent h5 {
+  color: #828181;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+}
+.personContent p{
+    color: #828181;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
