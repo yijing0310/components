@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dropdown Button</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap");
+        </style>
+        <style>
+            .dropdown {
+                position: relative;
+                display: inline-block;
+                font-family: "Noto Serif TC", serif;
+            }
+
+            .dropdown button {
+                background-color: #142020;
+                color: white;
+                padding: 10px 36px;
+                font-size: 1rem;
+                border: 1px solid #142020;
+                border-radius: 50px;
+                cursor: pointer;
+                transition: all 0.3s;
+            }
+
+            .dropdown button:hover {
+                background-color: #db6318;
+                border: none;
+                color: white;
+                transform: translateY(-2px);
+                transition: all 0.3s;
+            }
+
+            .dropdown-content {
+                visibility: hidden;
+                position: absolute;
+                background-color: transparent;
+                width: 100%;
+                z-index: 1;
+                opacity: 0;
+                transform: translateY(10px);
+                transition: opacity 0.3s, transform 0.3s ease-in-out;
+            }
+
+            .dropdown-content a {
+                color: #142020;
+                padding: 12px 8px;
+                border-bottom: 1px solid;
+                text-decoration: none;
+                display: block;
+                font-size: 1rem;
+                transition: background-color 0.3s;
+            }
+
+            .dropdown-content a:hover {
+                /* background-color: #142020; */
+                font-weight: bold;
+                color:#db6318;
+            }
+
+            .dropdown:hover .dropdown-content {
+                visibility: visible;
+                opacity: 1;
+                transform: translateY(0);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="dropdown">
+            <button>Click Me</button>
+            <div class="dropdown-content">
+                <a href="#">Action 1</a>
+                <a href="#">Action 2</a>
+                <a href="#">Action 3</a>
+                <a href="#">Action 4</a>
+            </div>
+        </div>
+    </body>
+</html>

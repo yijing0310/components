@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dropdown Button</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap");
+        </style>
+        <style>
+            /* .dropdown {
+            position: relative;
+            display: inline-block;
+        } */
+
+            .dropdown button {
+                font-family: "Noto Serif TC", serif;
+                background-color: #db6318;
+                color: white;
+                padding: 12px 24px;
+                font-size: 1rem;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: background-color 0.3s, transform 0.2s ease-in-out;
+            }
+
+            .dropdown button:hover {
+                background-color: #c35a14;
+                transform: translateY(-2px);
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #142020;
+                min-width: 200px;
+                border-radius: 8px;
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+                z-index: 1;
+                opacity: 0;
+                transform: translateY(10px);
+                transition: opacity 0.3s, transform 0.3s ease-in-out;
+            }
+
+            .dropdown-content a {
+                color: white;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                font-size: 1rem;
+                transition: background-color 0.3s;
+            }
+
+            .dropdown-content a:hover {
+                background-color: #db6318;
+                border-radius: 8px;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+                opacity: 1;
+                transform: translateY(0);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="dropdown">
+            <button>Click Me</button>
+            <div class="dropdown-content">
+                <a href="#">Action 1</a>
+                <a href="#">Action 2</a>
+                <a href="#">Action 3</a>
+                <a href="#">Action 4</a>
+            </div>
+        </div>
+    </body>
+</html>

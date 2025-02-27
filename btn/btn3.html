@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-hant-tw">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>btn3</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap");
+        </style>
+        <style>
+            button {
+                font-family: "Noto Serif TC", serif;
+                background: #fff;
+                border: 1px solid #1e2929;
+                padding: 10px 20px;
+                display: inline-block;
+                font-size: 15px;
+                font-weight: 600;
+                width: 120px;
+                text-transform: uppercase;
+                cursor: pointer;
+                transform: skew(-21deg);
+                margin-left: 100px;
+                margin-top: 100px;
+                color: #1e2929;
+            }
+
+            span {
+                display: inline-block;
+                transform: skew(21deg);
+            }
+
+            button:hover {
+                background-color: #1e2929;
+                color: #fff;
+                transition: all 0.3s;
+            }
+
+            button:hover::before {
+                left: 0;
+                right: 0;
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <button>
+            <span>Button</span>
+        </button>
+    </body>
+</html>
